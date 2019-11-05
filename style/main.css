@@ -1,12 +1,14 @@
 :root{
-    font-size: 62.5%;
-    font-family:Roboto,sans-serif ; 
+    font-size: 75.5%;
+    font-family:Montserrat, sans-serif ; 
   }
   
   h1{
-     font-size: 2.5rem;
-    font-weight: 300;
+     font-size: 3.5rem;
+    font-weight: 400;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: blueviolet;
   }
   
   hr {
@@ -55,12 +57,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
   
   .gallery-item:hover .image {
-      -webkit-filter: grayscale(1);
     filter: grayscale(1);
   }
   
@@ -77,4 +77,23 @@
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+  }
+
+  @media (max-width: 500px) {
+      .gallery-item,
+      body{
+          max-width: 30%;
+          grid-column: 2;
+          font-family: Oswald, sans-serif;
+          text-align: left;
+      }
+
+      div.container, h1 {
+          text-align: left;
+          margin-left: 2em;
+      }
+
+      div.text {
+          font-size: 2.5em;
+      }
   }
