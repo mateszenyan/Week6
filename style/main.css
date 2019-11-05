@@ -81,7 +81,7 @@
 
   @media (max-width: 500px) {
       .gallery-item,
-      body{
+      body {
           max-width: 30%;
           grid-column: 2;
           font-family: Oswald, sans-serif;
